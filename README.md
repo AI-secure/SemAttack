@@ -16,4 +16,18 @@ Use `train.py` to train your models. We also provide our pre-trained models [her
 
 ## Attack
 
-Use `attack.py` to attack pre-trained models. You may check the code for more details. You may also try different semantic perturbation functions and different attack parameters.
+Use `attack.py` to attack pre-trained models. For example, the script below attacks a BERT model fine-tuned on Yelp dataset using semantic perturbation function FC
+
+```
+python attack.py \
+  --function cluster \
+  --const 10 \
+  --confidence 0 \
+  --lr 0.15 \
+  --load path_to_pretrained_model \
+  --test-model path_to_pretrained_model \
+  --test-data path_to_dataset_with_embedding_space \
+  --untargeted
+```
+
+You may check the code for more details. You may also try different semantic perturbation functions and different attack parameters.
