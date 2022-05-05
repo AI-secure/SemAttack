@@ -36,7 +36,7 @@ You may check the code for more details. You may also try different semantic per
 
 ```
 @inproceedings{
-wang2022semattack
+wang2022semattack,
 author = {Wang, Boxin and Xu, Chejian and Liu, Xiangyu and Cheng, Yu and Li, Bo}, 
 title = {{S}em{A}ttack: Natural Textual Attacks via Different Semantic Spaces},
 year = {2022},
