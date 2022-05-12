@@ -6,9 +6,15 @@ This repo contains code to attack both English and Chinese models. We put the co
 
 You may use our code to attack other tasks or other datasets.
 
-## BERT Embedding Space
+## Setup
 
-We follow the process in paper ["Visualizing and Measuring the Geometry of BERT"](https://arxiv.org/abs/1906.02715) ([GitHub](https://github.com/PAIR-code/interpretability)) to calculate word embeddings. The embedding space is stored as an N * 768 tensor, where N is the number of total embeddings.
+1. Create environment and install requirements.
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+2. Prepare dataset and construct BERT embedding space. We follow the process in paper ["Visualizing and Measuring the Geometry of BERT"](https://arxiv.org/abs/1906.02715) ([GitHub](https://github.com/PAIR-code/interpretability)) to calculate word embeddings. The embedding space is stored as an N * 768 tensor, where N is the number of total embeddings. We also provide processed dataset with embedding space [here](https://drive.google.com/drive/folders/1nZzqaqJIhO75pkTK_AxJVzGY0uLxMJ6O?usp=sharing).
 
 ## Model Training
 
